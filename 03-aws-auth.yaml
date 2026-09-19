@@ -1,0 +1,21 @@
+apiVersion: v1
+data:
+  mapRoles:
+    - rolearn: arn:aws:iam::182312754465:role/eksctl-roboshop-dev-nodegroup-robo-NodeInstanceRole-na2nwIxfrCrH
+      groups:
+      - system:bootstrappers
+      - system:nodes
+      username: system:node:{{EC2PrivateDNSName}}
+  mapUsers:
+    - groups:
+      - roboshop-trainee
+      userarn: arn:aws:iam::182312754465:user/prasad
+      username: prasad
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2026-09-19T01:30:53Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "1283"
+  uid: 0d1bf4ed-5dfe-4add-9b7d-4cd023fb6f51
+      

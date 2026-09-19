@@ -11,6 +11,10 @@ data:
       - roboshop-trainee
       userarn: arn:aws:iam::182312754465:user/prasad
       username: prasad
+    - groups:
+      - roboshop-admin
+      userarn: arn:aws:iam::182312754465:user/vihaan
+      username: vihaan
 kind: ConfigMap
 metadata:
   creationTimestamp: "2026-09-19T01:30:53Z"
